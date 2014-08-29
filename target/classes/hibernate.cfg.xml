@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/bible</property>
+        <property name="connection.username">django</property>
+        <property name="connection.password">django</property>
+        
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">5</property>
+        
+        <!-- Determines batch updates by Hibernate -->
+        <property name="hibernate.jdbc.batch_size">30</property>
+        
+        <!-- Optimize second-level cache to minimize writes -->
+        <property name="hibernate.cache.use_minimal_puts">true</property>
+        
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+        
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+        
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">false</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+            
+        <mapping class="com.bible.models.Book" />
+        <mapping class="com.bible.models.BookTLC" />
+        <mapping class="com.bible.xml.models.BookTLCXml" />
+        <mapping class="com.bible.models.Person" />
+        <mapping class="com.bible.models.Place" />
+        <mapping class="com.bible.models.Topic" />
+        <mapping class="com.bible.models.Books_Annotation_Topic" />
+        <mapping class="com.bible.models.Books_Annotation_Reference" />
+        <mapping class="com.bible.models.Books_Annotation_Person" />
+        <mapping class="com.bible.models.Books_Annotation_Place" />
+           
+        <!-- 
+        <mapping resource="Books.hbm.xml"></mapping>
+        <mapping resource="BooksTLC.hbm.xml"></mapping>
+        <mapping resource="Person.hbm.xml"></mapping>
+        <mapping resource="Place.hbm.xml"></mapping>
+        <mapping resource="Topic.hbm.xml"></mapping>
+        <mapping resource="Books_Annotation_Person.hbm.xml"></mapping>
+        <mapping resource="Books_Annotation_Place.hbm.xml"></mapping>
+        <mapping resource="Books_Annotation_Reference.hbm.xml"></mapping>
+        <mapping resource="Books_Annotation_Topic.hbm.xml"></mapping>
+         -->
+    </session-factory>
+
+</hibernate-configuration>

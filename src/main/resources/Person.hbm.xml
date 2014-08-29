@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bible.models">
+	<class name="Person" table="PERSONS">
+		<id name="id" column="PERSONS_ID">
+			<generator class="native" />
+		</id>
+		
+		<property name="name" column="PERSONS_NAME" index="PERSONS_NAME_INDEX" />
+		<property name="other_names"	column="PERSONS_OTHER_NAMES" />
+		<many-to-one name="main_name" class="com.bible.models.Person" cascade="save-update" />
+		<property name="disambiguation" length="1000" column="PERSONS_DISAMBIGUATION" />
+		<property name="cross_references" type="text" column="PERSONS_CROSS_REFERENCES" />
+		<property name="biography" type="text" column="PERSONS_BIOGRAPHY" />
+		<property name="processed" not-null="true" column="PERSONS_PROCESSED" />
+		
+	</class>
+
+</hibernate-mapping>

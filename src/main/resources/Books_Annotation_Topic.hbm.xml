@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bible.models">
+	<class name="Books_Annotation_Topic" table="BOOKS_ANNOTATION_TOPIC">
+		<composite-id>
+			<key-many-to-one name="source" class="com.bible.models.BooksTLC" />
+			<key-many-to-one name="content" class="com.bible.models.Topic" />
+		</composite-id>
+			
+		<many-to-one name="book" class="com.bible.models.Books" cascade="save-update"/>
+		<property name="left_offset" column="ANNOTATION_LEFT_OFFSET" index="TOPIC_LEFT_OFFSET"/>
+		<property name="right_offset" column="ANNOTATION_RIGHT_OFFSET" />
+		<property name="strength" column="ANNOTATION_STRENGTH" />
+					
+	</class>
+
+</hibernate-mapping>

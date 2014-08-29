@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bible.models">
+	<class name="Place" table="PLACES">
+		<id name="id" column="PLACES_ID">
+			<generator class="native" />
+		</id>
+		
+		<property name="name" column="PLACES_NAME" index="PLACES_NAME_INDEX"/>
+		<property name="coordinates"	column="PLACES_COORDINATES" />
+		<many-to-one name="main_name" class="com.bible.models.Place" cascade="save-update" />
+		<property name="source_of_coordinates" length="1000" column="PLACES_SOURCE_OF_COORDINATES" />
+		<property name="disambiguation" length="1000" column="PLACES_DISAMBIGUATION" />
+		<property name="cross_references" type="text" column="PLACES_CROSS_REFERENCES" />
+		<property name="wikipedia_url" column="PLACES_WIKIPEDIA_URL" />
+		<property name="classification" column="PLACES_CLASSIFICATION" />
+		<property name="processed" not-null="true" column="PLACES_PROCESSED" />
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<!DOCTYPE BOOK [
+
+<!ELEMENT html (metadata, div+)>
+<!ELEMENT metadata (title?, language?, publisher?, publisher_location?, version?, year?)>
+<!ELEMENT div (a|b|PCDATA|span)*>
+
+<!ELEMENT title (CDATA)>
+<!ELEMENT author (CDATA)>
+<!ELEMENT language (CDATA)>
+<!ELEMENT publisher (CDATA)>
+<!ELEMENT publisher_location (CDATA)>
+<!ELEMENT year (CDATA)>
+<!ELEMENT version (CDATA)>
+<!ELEMENT b (PCDATA|a)*>
+<!ELEMENT a (CDATA)>
+<!ELEMENT span (PCDATA|a|b)*>
+
+<!ATTLIST div class (book|chapter|verse|h1|h2|h3|h4|h5|h6|img|map|video|subtitle) "verse">
+<!ATTLIST span class (p|footnote|comment) "p">
+<!ATTLIST div id ID #IMPLIED>
+<!ATTLIST div title (CDATA) #REQUIRED>
+<!ATTLIST a title (CDATA) #IMPLIED>
+<!ATTLIST a id ID #IMPLIED>
+<!ATTLIST a href CDATA #REQUIRED>
+]>

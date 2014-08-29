@@ -1,0 +1,92 @@
+<places>
+	<place>
+		<name>Jerusalem</name>
+		<cross_references>Joh 1:19; Joh 2:13; Joh 2:23; Joh 4:19</cross_references>
+		<classification>city</classification>
+	</place>
+	
+	<place>
+		<name>Galilee</name>
+		<cross_references>Joh 1:43; Joh 4:3; Joh 4:43; Joh 4:45; Joh 4:54</cross_references>
+	
+		<classification>region</classification>
+	</place>
+	
+	<place>
+		<name>Nazareth</name>
+		<cross_references>Joh 1:46</cross_references>
+		<classification>town</classification>
+	</place>
+	
+	<place>
+		<name>Cana of Galilee</name>
+		<cross_references>Joh 2:1; Joh 2:11; Joh 4:46</cross_references>
+		
+		<classification>town</classification>
+	</place>
+	
+	<place>
+		<name>Capernaum</name>
+		<cross_references>Joh 2:12; Joh 4:46; Joh 6:17; Joh 6:24; Joh 6:59</cross_references>
+		
+		<classification>city</classification>
+	</place>
+	
+	<place>
+		<name>Judea</name>
+		<cross_references>Joh 3:22; Joh 4:54</cross_references>
+		<classification>region</classification>
+	</place>
+	
+	<place>
+		<name>Aenon</name>
+		<cross_references>Joh 3:23</cross_references>
+		
+		<classification>town</classification>
+	</place>
+	
+	<place>
+		<name>Salim</name>
+		<cross_references>Joh 3:23</cross_references>
+		<classification>town</classification>
+	</place>
+	
+	<place>
+		<name>Samaria</name>
+		<cross_references>Joh 4:4</cross_references>
+		<classification>region</classification>
+	</place>
+	
+	<place>
+		<name>Sychar</name>
+		<cross_references>Joh 4:5</cross_references>
+		<classification>town</classification>
+	</place>
+	
+	<place>
+		<name>Bethesda</name>
+		<cross_references>Joh 5:2</cross_references>
+		<wikipedia_url></wikipedia_url>
+		<classification>landmark</classification>
+	</place>
+	
+	<place>
+		<name>Sea of Galilee</name>
+		<cross_references>Joh 6:1</cross_references>
+		<classification>region</classification>
+	</place>
+	
+	<place>
+		<name>Sea of Tiberias</name>
+		<main_name>Sea of Galilee</main_name>
+		<cross_references>Joh 6:1</cross_references>
+		<classification>region</classification>
+	</place>
+	
+	<place>
+		<name>Tiberias</name>
+		<cross_references>Joh 6:23</cross_references>
+		<classification>city</classification>
+	</place>
+	
+</places>

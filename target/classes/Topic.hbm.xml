@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bible.models">
+	<class name="Topic" table="TOPICS">
+		<id name="id" column="TOPICS_ID">
+			<generator class="native" />
+		</id>
+		
+		<property name="name" column="TOPICS_NAME" not-null="true" index="TOPIC_NAME_INDEX"/>
+		<property name="description" type="text" column="TOPICS_DESCRIPTION" />
+		<property name="cross_references" type="text" column="TOPICS_CROSS_REFERENCES" />
+		<property name="processed" not-null="true" column="TOPICS_PROCESSED" />
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bible.models">
+	<class name="BooksTLC" table="BOOKSTLC">
+		<id name="id" column="BOOKSTLC_ID" >
+			<generator class="assigned" />
+			
+		</id>
+		<many-to-one name="document" class="com.bible.models.Books" cascade="save-update" />
+		<property name="parent_id" column="BOOKSTLC_PARENT_ID" />
+		<property name="left_child"	column="BOOKSTLC_LEFT_CHILD" />
+		<property name="right_child" column="BOOKSTLC_RIGHT_CHILD" />
+		<property name="left_offset" column="BOOKSTLC_LEFT_OFFSET" />
+		<property name="right_offset" column="BOOKSTLC_RIGHT_OFFSET" />
+		<property name="hreadable_key" column="BOOKSTLC_HREADABLE_KEY" />
+		<property name="topics" column="BOOKSTLC_TOPICS" />
+		<property name="persons" column="BOOKSTLC_PERSONS" />
+		<property name="places" column="BOOKSTLC_PLACES" />
+		<property name="cross_references" type="text" column="BOOKSTLC_CROSS_REFERENCES" />
+		<property name="processed" not-null="true" column="BOOKSTLC_PROCESSED" />
+		
+	</class>
+
+</hibernate-mapping>

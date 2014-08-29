@@ -1,0 +1,89 @@
+<persons>
+	<person>
+		<name>John the Baptist</name>
+		<cross_references>Joh 1:6; Joh 1:15; Joh 1:19; Joh 3:24; Joh 3:27; Joh 4:1</cross_references>
+		<biography></biography>
+	</person>
+
+	<person>
+		<name>Moses</name>
+		<cross_references>Joh 1:17; Joh 1:45; Joh 3:15</cross_references>
+	</person>
+
+	<person>
+		<name>Elijah</name>
+		<cross_references>1:21</cross_references>
+	
+	</person>
+
+
+	<person>
+		<name>Jesus</name>
+		<cross_references>Joh 1:29; Joh 1:43; Joh 1:45; Joh 1:47; Joh 2:7; Joh 2:19; Joh 3:2; Joh 4:1; Joh 4:34; Joh 4:54; Joh 5:14; Joh 5:1; Joh 5:6; Joh 6:11; Joh 6:15; Joh 6:19; Joh 6:32</cross_references>
+	</person>
+
+	<person>
+		<name>Andrew</name>
+		<cross_references>Joh 1:40; Joh 6:8</cross_references>
+	
+	</person>
+
+	<person>
+		<name>Simon Peter</name>
+		<cross_references>Joh 1:40; Joh 1:41; Joh 6:8; Joh 6:68</cross_references>
+	
+	</person>
+
+	
+	<person>
+		<name>Jonah</name>
+		<disambiguation>The father of Andrew and Simon Peter</disambiguation>
+		<cross_references>Joh 1:42</cross_references>
+	
+	</person>
+	<person>
+		<name>Philip</name>
+		<cross_references>Joh 1:43; Joh 6:4</cross_references>
+	
+	</person>
+	<person>
+		<name>Nathanael</name>
+		<cross_references>Joh 1:45; Joh 1:46</cross_references>
+	
+	</person>
+	<person>
+		<name>Mary</name>
+		<disambiguation>The mother of Jesus</disambiguation>
+		<cross_references>Joh 2:3; Joh 2:5</cross_references>
+	
+	</person>
+	<person>
+		<name>Nicodemus</name>
+		<cross_references>Joh 3:1</cross_references>
+	
+	</person>
+	<person>
+		<name>Jacob</name>
+	
+		<cross_references>Joh 4:5; Joh 4:12</cross_references>
+	
+	</person>
+	<person>
+		<name>Joseph</name>
+		<disambiguation>Old Testament Joseph, son of Jacob</disambiguation>
+		<cross_references>Joh 4:5</cross_references>
+
+	</person>
+	<person>
+		<name>Joseph</name>
+		<disambiguation>The father of Jesus</disambiguation>
+		<cross_references>Joh 6:42</cross_references>
+
+	</person>
+	<person>
+		<name>Judas Iscariot</name>
+		<cross_references>Joh 6:70</cross_references>
+
+	</person>
+
+</persons>

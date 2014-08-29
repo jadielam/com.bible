@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bible.models">
+	<class name="Books" table="BOOKS">
+		<id name="id" column="BOOKS_ID">
+			<generator class="native" />
+			
+		</id>
+		
+		<many-to-one name="rootId" class="com.bible.models.BooksTLC" cascade="save-update, delete" not-null="false" unique="true" />
+		<property name="title" column="BOOKS_TITLE" />
+		<property name="short_title" column="BOOKS_SHORT_TITLE"/>
+		<property name="text" type="text" length="1048576000" column="BOOKS_TEXT"/>
+		<property name="structured_text" type="text" length="1048576000" column="BOOKS_STRUCTURED_TEXT" />
+		<property name="annotated_text" type="text" length="1048576000" column="BOOKS_ANNOTATED_TEXT" />
+		<property name="metadata" type="text" column="BOOKS_METADATA" />
+		<property name="structure" type="text" column="BOOKS_STRUCTURE" />
+				
+	</class>
+
+</hibernate-mapping>
